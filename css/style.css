@@ -1,16 +1,18 @@
 .row{
     margin: 0px;
     padding-top: 0px;
+    
 }
 
 #central-login{
-    background-image: url("/images/redes.jpg");
+    background-image: url("/images/bg-01.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;
+
 }
 
 #central-login .content{
