@@ -19,6 +19,7 @@
     margin-top: 15%;
 }
 #central-login form{
+    border-radius: 10px;
     background: rgb(0, 0, 0, 0.6);
     display: block;
     padding: 10px;
@@ -27,7 +28,7 @@
 }
 
 #central-login .btn-outline-primary{
-    border-radius: 0px;
+    border-radius: 10px;
     color: white;
 }
 #central-login .input-container{
