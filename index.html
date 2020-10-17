@@ -1,20 +1,3 @@
-<?php
-
-$usuario = $_POST['usuario'];
-$senha = $_POST['senha'];
-
-if(isset($_POST['Entrar'])){
-  if($usuario == "admin" && $senha == "admin"){
-    header("Location: home.html");
-    exit();
-  }else{
-    //unset($_POST['Entrar']);
-    echo '<script>alert("Usuário e senha incorretos!")</script>';
-  }
-}
-
-?>
-
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -24,7 +7,7 @@ if(isset($_POST['Entrar'])){
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 
     <title>Login</title>
@@ -32,7 +15,7 @@ if(isset($_POST['Entrar'])){
   <body> 
     <div id="central-login">
     <div class="content" align="center">
-        <form method="POST" class="col-sm-5">
+        <form action="processa.php" method="POST" class="col-sm-5">
             <!-- Input do Usuario -->
             <div class="input-container">
                 <i class="fa fa-user icon"></i>
@@ -43,7 +26,7 @@ if(isset($_POST['Entrar'])){
                 <i class="fa fa-key icon"></i>
                 <input type="password" name="senha" class="form-control" placeholder="Senha" require><br>
             </div>
-            <input type="submit" name="Entrar" class="btn btn-outline-primary btn-lg btn-block">
+            <button type="submit"  name="Entrar" class="btn btn-outline-primary btn-lg btn-block"> Entrar </button>
         </form>
     </div>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -52,5 +35,3 @@ if(isset($_POST['Entrar'])){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
